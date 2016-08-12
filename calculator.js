@@ -179,10 +179,10 @@ $(document).ready(function() {
     var hippieStr = getResultString(hippie[0][0],hippie[0][1],getSQNames(hippie[1],true,false));
     
     if ((frat[0][0]+frat[0][1]) <= (hippie[0][0]+hippie[0][1])) {
-    	$('#result').html('Do Frat Orcs <br/>' + fratStr);
+    	$('#result').html('Most optimal path: Frat Orcs <br/>' + fratStr);
       $('#second').html('Best Hippie:<br/>' + hippieStr);
     } else {
-    	$('#result').html('Do Hippies <br/>' + hippieStr);
+    	$('#result').html('Most optimal path: Hippies <br/>' + hippieStr);
       $('#second').html('Best Frat Orc:<br/>' + fratStr);
     }
     
